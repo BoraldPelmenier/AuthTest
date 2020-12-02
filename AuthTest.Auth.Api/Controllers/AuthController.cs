@@ -26,21 +26,21 @@ namespace AuthTest.Auth.Api.Controllers
         {
             new Account()
             {
-                Id = Guid.Parse("e2371dc9-a849-4f3c-9004-df8fc921c123a"),
+                Id = Guid.Parse("e2371dc9-a849-4f3c-9004-df8fc921c13a"),
                 Email = "user@email.com",
                 Password = "user",
                 Roles = new Role[] {Role.User}
             },
             new Account()
             {
-                Id = Guid.Parse("3r23ew39-4329-4f3c-921h-d41fere2wv23a"),
+                Id = Guid.Parse("7b0a1ec1-80f5-46b5-a108-fb938d3e26c0"),
                 Email = "user2@email.com",
                 Password = "user2",
                 Roles = new Role[] {Role.User}
             },
             new Account()
             {
-                Id = Guid.Parse("e2371dc9-a849-4f3c-9004-d4jf3jt63f3a"),
+                Id = Guid.Parse("8e7eb047-e1e0-4801-ba41-f8360a9e64a7"),
                 Email = "admin@email.com",
                 Password = "admin",
                 Roles = new Role[] {Role.Admin}
@@ -48,7 +48,7 @@ namespace AuthTest.Auth.Api.Controllers
 
         };
 
-        public IOptions<AuthOptions> AuthOptions { get; }
+        //public IOptions<AuthOptions> AuthOptions { get; }
 
         [Route("login")]
         [HttpPost]
@@ -92,7 +92,8 @@ namespace AuthTest.Auth.Api.Controllers
                 claims.Add(new Claim("role", role.ToString()));
             }
 
-            JwtSecurityToken token = new JwtSecurityToken(authParams.Issuer, authParams.Audience,
+            JwtSecurityToken token = new JwtSecurityToken(authParams.Issuer,
+                authParams.Audience,
                 claims,
                 expires: DateTime.Now.AddSeconds(authParams.TokenLifeTime),
                 signingCredentials: credentials);

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthTest.Auth.Api", "AuthTest.Auth.Api\AuthTest.Auth.Api.csproj", "{485E86AA-2601-4A74-8FF3-A82221947479}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthTest.Auth.Api", "AuthTest.Auth.Api\AuthTest.Auth.Api.csproj", "{485E86AA-2601-4A74-8FF3-A82221947479}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthTest.Auth.Common", "AuthTest.Auth.Common\AuthTest.Auth.Common.csproj", "{F002D237-7E49-4D81-AB31-F4961902F776}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthTest.Auth.Common", "AuthTest.Auth.Common\AuthTest.Auth.Common.csproj", "{F002D237-7E49-4D81-AB31-F4961902F776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthTest.Resource.Api", "AuthTest.Resource.Api\AuthTest.Resource.Api.csproj", "{1C3513F3-809B-403C-A1F9-17F33D96D68C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F002D237-7E49-4D81-AB31-F4961902F776}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F002D237-7E49-4D81-AB31-F4961902F776}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F002D237-7E49-4D81-AB31-F4961902F776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3513F3-809B-403C-A1F9-17F33D96D68C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3513F3-809B-403C-A1F9-17F33D96D68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3513F3-809B-403C-A1F9-17F33D96D68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3513F3-809B-403C-A1F9-17F33D96D68C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
